@@ -1,1 +1,1 @@
-gin test
+练习go框架gin的基本使用
