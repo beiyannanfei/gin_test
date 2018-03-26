@@ -17,7 +17,7 @@ func main() {
 	//curl 127.0.0.1:8080/user/abcd
 	router.GET("/user/:name", func(c *gin.Context) {
 		name := c.Param("name")
-		fmt.Printf("params name: %v\n", name)
+		fmt.Printf("===== params name: %v\n", name)
 		c.String(http.StatusOK, "Hello %s\n", name)
 	})
 
